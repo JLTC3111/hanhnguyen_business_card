@@ -184,8 +184,8 @@
                 color-adjust: exact;
             }
             .business-card-container {
-                width: 3.5in; /* Standard size */
-                height: 2in; /* Standard size */
+                width: 9cm; /* Standard size */
+                height: 5.5cm; /* Standard size */
                 gap: 0; /* No gap between faces when printing */
             }
             .card-face {
