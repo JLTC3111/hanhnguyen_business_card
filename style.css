@@ -58,17 +58,17 @@
             font-weight: 700;
         }
         .front-card .name {
-            font-size: .9rem;
+            font-size: .7rem;
             font-weight: 600;
-            margin-bottom: -.5px;
-            margin-left: -20px;
+            margin-bottom: 1.5px;
+            margin-left: -5px;
             color: #333;
             line-height: 1;
         }
         .front-card .title {
-            font-size: .65rem;
+            font-size: .5rem;
             color: #555;
-            margin-left: -.5rem;
+            margin-left: .25rem;
             margin-bottom: -1.5rem;
         }
 
@@ -111,11 +111,11 @@
         }
 
         .front-card .company-qr-code {
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             position: absolute;
             bottom: 20%;
-            right: 42.5%;
+            right: 38.5%;
             z-index: 2;
             background-color: transparent;
         }
@@ -146,13 +146,17 @@
             color: #e2e8f0; /* Lighter gray for text */
         }
 
-        .back-card .personal-qr-code {
-            width: 65px;
-            height: 65px;
+        .back-card .personal-photo {
             position: absolute;
             bottom: center;
             right: 30%;
             z-index: 2;
+        }
+
+        .back-card .personal-photo img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
         }
 
         /* Diagonal red accent on back card */
