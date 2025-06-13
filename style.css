@@ -189,8 +189,8 @@
                 gap: 0; /* No gap between faces when printing */
             }
             .card-face {
-                width: 3.5in;
-                height: 2in;
+                width: 9cm;
+                height: 5.5cm;
                 box-shadow: none;
                 border: 0.5px solid #ccc; /* Subtle border for cutting guide */
                 border-radius: 0; /* No rounded corners for printing */
