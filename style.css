@@ -163,8 +163,8 @@
         }
 
         .back-card .personal-photo img {
-            width: 65px;
-            height: 65px; 
+            width: 75px;
+            height: 75px; 
             object-fit: cover;
             /* Glassmorphism additions */
             background: linear-gradient(
