@@ -46,8 +46,8 @@
             display: flex;
             position: absolute;
             align-items: center;
-            top: 5px;
-            left: 10px;
+            top: 15px;
+            left: 20px;
             z-index: 1;
         }
         .front-card .logo-container img {
@@ -58,18 +58,19 @@
             font-weight: 700;
         }
         .front-card .name {
-            font-size: .7rem;
+            font-size: .75rem;
             font-weight: 600;
-            margin-bottom: 1.5px;
-            margin-left: -5px;
+            margin-bottom: 5px;
+            margin-left: 7.5rem;
             color: #333;
             line-height: 1;
         }
         .front-card .title {
-            font-size: .5rem;
+            text-align: left;
+            font-size: .625rem;
             color: #555;
-            margin-left: .25rem;
-            margin-bottom: -1.5rem;
+            margin-left: 9.5rem;
+            margin-bottom: -1rem;
         }
 
         /* Diagonal red and gray elements for the front card */
@@ -92,13 +93,21 @@
         /* ICUE text on the red diagonal */
         .front-card .diagonal-icue {
             position: absolute;
-            top: 20px; /* Adjusted to fit the diagonal */
-            right: 0px; /* Adjusted to fit the diagonal */
+            top: 12.5px; /* Adjusted to fit the diagonal */
+            right: 5px; /* Adjusted to fit the diagonal */
             transform: rotate(45deg);
-            color: white;
+            color: rgb(215, 215, 215);
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 1.4rem;
             z-index: 10; /* Ensure it's above the diagonal */
+             /* Glassmorphism additions */
+            background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
+            backdrop-filter: blur(.5px); /* blur behind the element */
+            -webkit-backdrop-filter: blur(.5px); /* Safari support */
+            padding: 0 2.5px; /* add padding for visibility */
+            border-radius: 12px; /* rounded edges */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+            box-shadow: #2d3748 2px 4px 8px;
         }
 
         .front-card .geometry-container {
@@ -111,11 +120,11 @@
         }
 
         .front-card .company-qr-code {
-            width: 55px;
-            height: 55px;
+            width: 75px;
+            height: 75px;
             position: absolute;
-            bottom: 20%;
-            right: 38.5%;
+            bottom: 35%;
+            right: 37.5%;
             z-index: 2;
             background-color: transparent;
         }
@@ -134,28 +143,30 @@
         .back-card .contact-item {
             display: flex;
             align-items: center;
-            margin-bottom: 8px;
+            margin-bottom: 15px;
         }
         .back-card .icon {
-            font-size: .55em; /* Adjust icon size */
+            font-size: .75em; /* Adjust icon size */
             margin-right: 12px;
             color: #e53e3e; /* Red for icons */
         }
         .back-card .text-content {
-            font-size: .55em;
+            font-size: .75em;
             color: #e2e8f0; /* Lighter gray for text */
         }
 
         .back-card .personal-photo {
+            width: 100%;
+            height: 100%;
             position: absolute;
-            bottom: center;
-            right: 30%;
+            top:35%;
+            left: 65%;
             z-index: 2;
         }
 
         .back-card .personal-photo img {
-            width: 45px;
-            height: 45px;
+            width: 55px;
+            height: 55px;
             object-fit: cover;
         }
 
@@ -172,6 +183,14 @@
             transform-origin: top right;
         }
 
+        @media screen {
+            .business-card-container,
+            .card-face {
+                width: 9cm;
+                height: 11cm;
+            }
+        }
+
         /* Basic print styles */
         @media print {
             body {
@@ -184,13 +203,13 @@
                 color-adjust: exact;
             }
             .business-card-container {
-                width: 9cm; /* Standard size */
-                height: 5.5cm; /* Standard size */
+                width: 9.0cm; /* Standard size */
+                height: 11cm; /* Standard size */
                 gap: 0; /* No gap between faces when printing */
             }
             .card-face {
-                width: 9cm;
-                height: 5.5cm;
+                width: 9.0cm;
+                height: 11cm;
                 box-shadow: none;
                 border: 0.5px solid #ccc; /* Subtle border for cutting guide */
                 border-radius: 0; /* No rounded corners for printing */
